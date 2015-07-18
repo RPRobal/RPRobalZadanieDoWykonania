@@ -29,12 +29,12 @@ class DateMajorityValidatorTest extends AbstractConstraintValidatorTest
         $this->assertNoViolation();
     }
 
-    public function getMajorityDateValid()
+    public function getMajorityDatesValid()
     {
         return array(
-                array('1921-10-11'),
-                array('1931-10-11'),
-                array('1925-03-21'),
+            array(new \DateTime('1921-10-11')),
+            array(new \DateTime('1931-10-11')),
+            array(new \DateTime('1925-03-21')),
         );
     }
 
@@ -53,9 +53,9 @@ class DateMajorityValidatorTest extends AbstractConstraintValidatorTest
     public function getMajorityDatesInvalid()
     {
         return array(
-            array('2015-10-12'),
-            array('2001-10-11'),
-            array('1999-03-21'),
+            array(new \DateTime('2015-10-12')),
+            array(new \DateTime('2001-10-11')),
+            array(new \DateTime('1999-03-21')),
         );
     }
 }
