@@ -1,0 +1,17 @@
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div id="center">
+    {% for task in tasks %}
+        <div id="block">
+            ID = {{ task.id }}<br>
+            Imie = {{ task.name }}<br>
+            Nazwisko = {{ task.name }}<br>
+            Data Urodzenia = {{ task.birth|date('Y-m-d') }}<br>
+            <a href="{{path('_edit', {'id': task.id})  }}">Edytuj</a>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

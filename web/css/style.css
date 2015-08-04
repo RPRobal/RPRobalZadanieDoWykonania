@@ -1,3 +1,10 @@
 #center {
     text-align: center;
 }
+
+#block {
+    padding: 10px;
+    text-align: left;
+    float: left;
+    border: 1px solid;
+}
