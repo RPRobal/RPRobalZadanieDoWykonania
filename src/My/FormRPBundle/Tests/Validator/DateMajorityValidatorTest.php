@@ -27,6 +27,10 @@ class DateMajorityValidatorTest extends AbstractConstraintValidatorTest
         $this->validator->validate($date, new DateMajority());
         $this->assertNoViolation();
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
     public function getMajorityDatesValid()
     {
         return array(
